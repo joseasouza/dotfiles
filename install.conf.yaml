@@ -2,17 +2,13 @@
     link:
       relink: true
 - link:
-    ~/.zshrc: .zshrc
     ~/.oh-my-zsh:
       create: true
-      glob: true
-      path: ohmyzsh/*
+      path: ohmyzsh
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
       create: true
-      glob: true
-      path: zsh-autosuggestions/*
+      path: zsh-autosuggestions
+    ~/.zshrc: .zshrc
 
 - shell:
-    - description: Installing submodules
-      command: git submodule update --init --recursive
     - [git submodule update --init --recursive, Installing submodules]
