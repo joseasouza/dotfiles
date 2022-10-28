@@ -15,4 +15,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - description: Installing oh-my-zsh
-      command: $([[ -d "$HOME/.oh-my-zsh" ]] || sh -c ohmyzsh/tools/install.sh --unattended --keep-zshrc
+      command: $([[ -d "$HOME/.oh-my-zsh" ]] || sh -c "ohmyzsh/tools/install.sh" --unattended --keep-zshrc
