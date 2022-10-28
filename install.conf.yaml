@@ -6,11 +6,13 @@
     ~/.oh-my-zsh:
       create: true
       glob: true
-      path: ~/dotfiles/ohmyzsh/*
+      path: ohmyzsh/*
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
       create: true
       glob: true
-      path: ~/dotfiles/zsh-autosuggestions/*
+      path: zsh-autosuggestions/*
 
 - shell:
+    - description: Installing submodules
+      command: git submodule update --init --recursive
     - [git submodule update --init --recursive, Installing submodules]
