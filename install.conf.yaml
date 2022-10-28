@@ -4,6 +4,10 @@
 
 - link:
     ~/.zshrc: .zshrc
+    ~/.oh-my-zsh:
+      create: true
+      glob: true
+      path: ohmyzsh/*
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
