@@ -3,10 +3,6 @@
       relink: true
 - link:
     ~/.zshrc: .zshrc
-    ~/.oh-my-zsh:
-      create: true
-      glob: true
-      path: ohmyzsh/*
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
       create: true
       glob: true
@@ -14,3 +10,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - description: Installing oh-my-zsh
+      command: $([[ -d "$HOME/.oh-my-zsh" ]] || ohmyzsh/tools/install.sh --unattended --keep-zshrc)
