@@ -5,10 +5,10 @@
     ~/.oh-my-zsh:
       create: true
       path: ohmyzsh
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
-      create: true
-      path: zsh-autosuggestions
-    ~/.zshrc: .zshrc
+    # ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
+    #   create: true
+    #   path: zsh-autosuggestions
+    # ~/.zshrc: .zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
