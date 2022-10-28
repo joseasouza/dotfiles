@@ -9,6 +9,12 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+
     - description: Installs zsh-autosuggestions
-      command: git --depth 1 clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    - command: zsh
+      command: git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+    - description: Installs Starship theme
+      command: sh -c "$(curl -sS https://starship.rs/install.sh)" -- -y
+
+    - description: Initializes zsh
+      command: zsh
