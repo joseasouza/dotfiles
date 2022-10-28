@@ -8,6 +8,10 @@
       create: true
       glob: true
       path: ohmyzsh/*
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions:
+      create: true
+      glob: true
+      path: zsh-autosuggestions/*
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

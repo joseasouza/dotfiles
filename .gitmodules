@@ -6,3 +6,7 @@
 	path = ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
 	ignore = dirty
+[submodule "zsh-autosuggestions"]
+	path = zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+	ignore = dirty
