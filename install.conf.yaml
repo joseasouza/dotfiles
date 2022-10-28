@@ -7,7 +7,6 @@
       create: true
       path: ohmyzsh
     ~/.oh-my-zsh/plugins/zsh-autosuggestions:
-      create: true
       path: zsh-autosuggestions
 
 - shell:
