@@ -10,8 +10,8 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
-    - description: Installs Starship theme
-      command: sh -c "$(curl -sS https://starship.rs/install.sh)" -- -y
+    - description: Installs PowerLevel10k theme
+      command: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-    - description: Initializes zsh
+    - description: Initiates zsh
       command: zsh
