@@ -1,7 +1,6 @@
 - defaults:
     link:
       relink: true
-
 - link:
     ~/.zshrc: .zshrc
     ~/.oh-my-zsh:
@@ -14,4 +13,4 @@
       path: zsh-autosuggestions/*
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
