@@ -9,5 +9,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - command: git --depth 1 clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    - description: Installs zsh-autosuggestions
+      command: git --depth 1 clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     - command: zsh
