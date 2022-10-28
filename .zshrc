@@ -99,5 +99,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-plugins=(zsh-autosuggestions)
+plugins=(zsh-autosuggestions git docker docker-compose rails ruby kubectl)
 
